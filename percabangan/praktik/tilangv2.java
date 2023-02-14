@@ -13,12 +13,12 @@ public class tilangv2 {
         if (sim == JOptionPane.YES_OPTION ) {
             int stnk = JOptionPane.showOptionDialog(null, "Apakah anda mempunyai STNK", "XRA Departement", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon, null, null);
             if (stnk == JOptionPane.YES_OPTION) {
-                JOptionPane.showMessageDialog(null, "Tidak ditilang");
+                JOptionPane.showMessageDialog(null, "Silahkan Jalan Terus.");
             } else if(stnk == JOptionPane.NO_OPTION) {
-                JOptionPane.showMessageDialog(null, "Anda Ditilang");
+                JOptionPane.showMessageDialog(null, "Anda Ditilang!!!");
             }
         } else if(sim == JOptionPane.NO_OPTION) {
-            JOptionPane.showMessageDialog(null, "Anda Ditilang");
+            JOptionPane.showMessageDialog(null, "Anda Ditilang!!!");
         }
     }   
 }
