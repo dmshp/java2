@@ -8,7 +8,7 @@ public class kasirv2 {
 
         ImageIcon icon = new ImageIcon("kosong.png");
 
-        int jawab = JOptionPane.showOptionDialog(null, "Apakah anda mempunyai kartu member?", "XRA Market", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
+        int jawab = JOptionPane.showOptionDialog(null, "Apakah anda mempunyai kartu member?", "XRA Market", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, icon, null, null);
 
         if(jawab == JOptionPane.YES_OPTION){
                 String total1 = (String) JOptionPane.showInputDialog(null,"Berapa total belanja anda ?","XRA Market",JOptionPane.INFORMATION_MESSAGE,icon,null,"");
@@ -16,11 +16,13 @@ public class kasirv2 {
                 int num1 = Integer.parseInt(total1);
                 if ( num1 >= 500000 ) {
                     int diskon50 = num1 - 50000;
-                    JOptionPane.showMessageDialog(null, "Maka anda hanya harus membayar sebesar : " + diskon50);
+                    JOptionPane.showMessageDialog(null, "Anda mendapatkan potongan sebesar         : Rp. 50.000" + "\n" +
+                                                                         "Maka anda hanya harus membayar sebesar : " + "Rp. " +diskon50 );
                 }
                 else if (num1 >= 100000) {
                     int diskon15 = num1 - 15000;
-                    JOptionPane.showMessageDialog(null, "Maka anda hanya harus membayar sebesar : " + diskon15);
+                    JOptionPane.showMessageDialog(null,"Anda mendapatkan potongan sebesar      : Rp. 15.000" + "\n" +
+                                                                        "Maka anda hanya harus membayar sebesar : " + diskon15);
                 } else {
                     JOptionPane.showMessageDialog(null, "Maka anda hanya harus membayar sebesar : " + num1);
                 }
