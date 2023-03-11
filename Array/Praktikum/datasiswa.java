@@ -1,7 +1,7 @@
 package Array.Praktikum;
 import java.util.Scanner;
 
-public class list {
+public class datasiswa {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Scanner scan2 = new Scanner(System.in);
@@ -25,14 +25,19 @@ public class list {
             nilai [i] = scan3.nextInt();
 
             
-
-            if (nilai[i] > 70) {
+            // Lulus/tdk
+            if (nilai[i] >= 70) {
                 status[i] = "Lulus";
             } else {
                 status[i] = "Tidak";
             }
 
         }
+
+        // Out
+        System.out.println("=================================");
+        System.out.println("        DAFTAR NILAI SISWA       "); 
+        System.out.println("=================================");
 
         System.out.println("No.\tSiswa\tNilai\tStatus");
         for (int i = 0; i < a; i++) {

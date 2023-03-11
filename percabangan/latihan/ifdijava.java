@@ -1,4 +1,4 @@
-package percabangan;
+package percabangan.latihan;
 import java.util.Scanner;
 
 

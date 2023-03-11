@@ -1,8 +1,6 @@
 package percabangan.latihan;
 import java.util.Scanner;
 
-import percabangan.switchd;
-
 
 public class traficlight {
   public static void main(String[] args) {
